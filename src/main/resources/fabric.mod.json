@@ -1,16 +1,16 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
+  "id": "leveldatachangedetector",
   "version": "${version}",
 
-  "name": "Example Mod",
+  "name": "Leve.dat Change Detector",
   "description": "This is an example description! Tell everyone what your mod is about!",
   "authors": [
-    "Me!"
+    "xanderstuff"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "",
+    "sources": "https://github.com/xanderstuff/level.dat-change-detector"
   },
 
   "license": "CC0-1.0",
@@ -19,20 +19,19 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "io.github.xanderstuff.leveldatachangedetector.LevelDataChangeDetector"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "leveldatachangedetector.mixins.json"
   ],
 
   "depends": {
     "fabricloader": ">=0.13.3",
     "fabric": "*",
-    "minecraft": "~1.18.2",
+    "minecraft": "*",
     "java": ">=17"
   },
   "suggests": {
-    "another-mod": "*"
   }
 }
